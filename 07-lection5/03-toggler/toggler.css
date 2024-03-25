@@ -51,10 +51,16 @@
     background-color: #4263EB;
 }
 
+.checkbox__toggle ~ .checkbox__state
+.checkbox__control .checkbox__round {
+    transition: all 0.3s linear;
+}
+
 .checkbox__toggle:checked ~ .checkbox__state
 .checkbox__control .checkbox__round {
     background-color: #fff;
     transform: translateX(100%);
+    transition: all 0.3s linear;
 }
 
 .checkbox__toggle:disabled ~ .checkbox__state
