@@ -4,7 +4,7 @@
 }
 
 .tooltip__bubble {
-    display: none;
+    opacity: 0;
     position: absolute;
     padding: 12px 21px;
     border-radius: 10px;
@@ -22,6 +22,11 @@
     transform: translateX(-50%);
 }
 
+.tooltip__icon {
+    width: 24px;
+    height: 24px;
+}
+
 .tooltip__bubble::before {
     content: "";
     border: 10px solid transparent;
@@ -33,5 +38,6 @@
 }
 
 .tooltip__trigger:hover ~ .tooltip__bubble {
-    display: block;
+    opacity: 1;
+    transition: opacity 0.3s linear;
 }
